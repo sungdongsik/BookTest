@@ -4,13 +4,14 @@ package org.mega.book.springboot.domain.post;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import org.mega.book.springboot.domain.BaseTimeEntity;
 
 import javax.persistence.*;
 
 @Getter
 @NoArgsConstructor
 @Entity
-public class Post {
+public class Post extends BaseTimeEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
